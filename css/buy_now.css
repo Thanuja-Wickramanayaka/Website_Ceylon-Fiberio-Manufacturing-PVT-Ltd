@@ -1,0 +1,123 @@
+/*
+                        Powered by @TW Solutions
+Copyright © 2022 Ceylon Fiberio Manufacturing PVT Ltd. All Rights Reserved.	
+
+ *Title  			      :   Ceylon Fiberio Manufacturing (PVT)Ltd.
+ *File Type 		    :   CSS
+ *Title             :   Buy Now Style CSS
+
+ *Descrption        :	  Website for Ceylon Fiberio Manufacturing (PVT)Ltd.
+ *Coded by          :	  Thanuja Wickramanayaka
+ *Subject           :	  ITM 2233 - Web Application Development
+ *Reg.Number        :	  MGT/2019/401
+ *Index Number      :   MGT/5701
+ *Date of creation  :	  27.09.2022
+
+*/
+
+
+  /***************/
+ /*Body Part CSS*/
+/***************/
+.bac{
+    background: #0c3b2e;
+
+}
+
+
+  /***************/
+ /*Outlet Cover */
+/***************/
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(213, 72, 72);
+
+}
+  
+.container img{
+    width: 100%;
+    
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+}
+  
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+}
+  
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+}
+  
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(226, 60, 60); 
+    background: rgba(201, 27, 27, 0.5); 
+    color: #f1f1f1;
+    width: 60%;
+    padding: 20px;
+
+}
+  
+
+  /*******/
+ /*Form */
+/*******/
+
+/*Get Your Account Here*/
+.account-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px 32px;
+    font-size: 16px;
+    background: #fd0000;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px 10px;  
+    margin-top: 10px;
+
+}
+
+.account-btn:hover{
+    border:1px solid #ff0000;
+    background:rgb(255, 166, 0);
+    transition: 1s;
+    color: rgb(0, 0, 0);
+   
+}
+
+  
+
+
+
+
+
+
+
+

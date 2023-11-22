@@ -1,0 +1,612 @@
+/*
+                        Powered by @TW Solutions
+Copyright © 2022 Ceylon Fiberio Manufacturing PVT Ltd. All Rights Reserved.	
+
+ *Title  			:   Ceylon Fiberio Manufacturing (PVT)Ltd.
+ *File Type 		:   HTML
+ *Title             :   Products Style CSS
+
+ *Descrption        :	Website for Ceylon Fiberio Manufacturing (PVT)Ltd.
+ *Coded by          :	Thanuja Wickramanayaka
+ *Subject           :	ITM 2233 - Web Application Development
+ *Reg.Number        :	MGT/2019/401
+ *Index Number      :   MGT/5701
+ *Date of creation  :	27.09.2022
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+  /******************************/
+ /*Entire HTML File Related CSS*/
+/******************************/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+
+  /************************/
+ /*Header of the Page CSS*/
+/************************/
+.sub_header{
+
+    min-height: 50%;
+    width: 100%;
+	background-image:linear-gradient(transparent,rgba(154, 236, 217, 0.7)), url(https://img.freepik.com/premium-photo/selective-focus-old-wood-table-with-beautiful-beach-background-display-your-product_176697-227.jpg?w=2000);
+    /*background-color: rgb(4, 4, 47);*/
+    background-position: center;
+    background-size: cover;
+    text-align: center ;
+    color: #fff;
+
+}
+
+.sub_header h1{
+    text-align: center;
+    color: darkorange;
+    text-shadow: 2px 2px rgb(183, 126, 27);
+    font-weight: bold;
+    border-top: 10px;
+     
+}
+
+
+  /****************/
+ /*Search Bar CSS*/
+/****************/
+.search{
+    position:absolute;
+    top: 5%;
+    left: 85%;
+    transform: translate(-50% ,-50%);
+    background: rgba(31, 70, 72, 0.7);
+    max-width: 300px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+
+}
+
+.search .input{
+    width: 85%;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight:200;
+    background:#e2fff9;
+    font-family: Raleway;
+}
+
+.searchbtn{
+    background: #ffec00;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.searchbtn .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 15px;
+    color: black;
+    
+}
+
+
+
+@media (max-width: 700px){
+    .search{
+        font-size: 10px;
+        margin-left: -90px;
+        max-width: 250px;
+        top: 4%;
+        
+    }
+}
+
+
+  /***************************/
+ /*Navigation Bar & Logo CSS*/
+/***************************/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width: 200px;
+
+}
+
+.navbar_links{
+    flex: 1;
+    text-align: right;
+
+}
+
+.navbar_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.navbar_links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.navbar_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f86d04 ;
+    display:block ;
+    margin: auto;
+    transition: 0.5s;
+    font-weight:900;
+
+}
+
+.navbar_links ul li:hover::after{
+    width: 100%;
+
+}
+
+nav .fa{
+    display:none;
+}
+
+
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    
+    }
+    .navbar_links ul li{
+        display: block;
+    }
+
+    .navbar_links{
+        position: absolute;
+        background: rgb(4, 4, 47);
+        height: 100vh;
+        width: 240px;
+        top: 0;
+        right: -280px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s ;
+
+    }
+
+    .anima0{
+        font-size: 50px;
+        top: 33%;
+    }
+  
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size:22px;
+        cursor: pointer;
+
+    }
+
+    .navbar_links{
+        padding: 30px;
+
+    }
+    nav img{
+        width: 100px;
+    
+    }
+
+    .navbar_links ul li a{
+        color:rgb(255, 255, 255);
+        
+    }
+
+
+}
+
+
+  /***************/
+ /*Body Part CSS*/
+/***************/
+.bac{
+    background: #0c3b2e;
+}
+
+  /*****************************/
+ /*Ceylon Fiberio Products CSS*/
+/*****************************/
+.pdt-para .row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px 30px;
+
+}
+
+.pdt-para .row .left{
+    overflow: hidden;
+
+}
+
+.pdt-para .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 50px;
+
+}
+
+.pdt-para .row .right{
+    display: flex;
+    align-items:center;
+    margin-left: 150px;
+
+}
+
+.pdt-para .row .right .paragraph h1{
+    color: greenyellow;
+}
+
+.pdt-para .row .right .paragraph {
+    padding-left: 20px;
+    color: #fff;
+
+}
+
+.pdt-para .row .right .paragraph p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 5px;
+    text-align:justify;
+
+}
+
+
+
+@media (max-width:991px){
+    .pdt-para .row .right .paragraph {
+        padding-left: 0;
+    
+    }
+
+}
+
+@media (max-width:768px){
+    
+    .pdt-para .row{
+        width: 90%;
+        grid-template-columns: 1fr;
+
+    }
+
+.pdt-para .row .right{
+    display: flex;
+    align-items:center;
+    margin-left: 20px;
+
+}
+}
+
+
+  /******************/
+ /*Product Card CSS*/
+/******************/
+.product-card{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c3b2e;
+    line-height: 1.5;
+
+}
+
+.read-btn{
+    text-decoration: none;
+
+}
+
+.container-card{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+     background-color:#5da067;
+     padding-top: 10px;
+     padding-bottom: 10px;
+
+}
+
+.pdct-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-r{
+    flex: 1 1 320px;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    align-self: normal;
+
+}
+
+.card-r img{
+    max-width: 260px;
+    margin-top: 20px; 
+    
+}
+
+.card-r h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+
+.card-r p{
+    margin-bottom: 10px;
+
+}
+
+.card-r .read-btn{
+    margin-top: auto;
+    display: inline-block;
+    background-color:orange;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 450;
+
+}
+
+.card-r .read-btn:hover{
+    background-color:rgb(255, 153, 0);
+}
+
+
+  /*********************/
+ /*Product Details CSS*/
+/*********************/
+.product-dtls{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.product-dtls .prdt1{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+
+.product-dtls .col-md-6 img{
+    width: 400px;
+    margin: 0;
+   
+}
+
+.product-dtls .prdt1 h2{
+    padding-top: 0;
+    color: darkorange;
+    text-decoration:overline green;
+    
+}
+
+.product-dtls .prdt1 p{
+    padding: 15px 0 25px;
+    color: #fff;
+    
+}
+
+@media (max-width:991px){
+    .product-dtls .col-md-6 img{
+        width: 200px;
+        margin: 0;
+       
+    }
+
+}
+
+
+  /********/
+ /*Footer*/
+/********/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(4, 4, 47);
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.footer p{
+    color: rgb(255, 255, 255);
+  
+}
+
+.icons .fa{
+    color: #fa9200;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.icons .fa:hover{
+    color: #0d00ff;
+    background-color: #fff;
+
+}
+
+.top_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 32px;
+    font-size: 14px;
+    background: #00fd69;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px 20px;  
+
+}
+
+.top_btn:hover{
+    border:1px solid #ffffff;
+    background:orange;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+   
+}
+
+
+  /*************/
+ /*Quick Links*/
+/*************/
+.container{
+    max-width:1300px;
+    margin: auto;
+    
+}
+
+.container .c_row{
+    display: flex;
+    flex-wrap:wrap;
+    text-align: left;
+
+}
+
+.container ul{
+    list-style: none;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 30px;
+
+}
+
+.footer-col p{
+    font-size: 15px;
+    color: #fff;
+	text-align: left;
+
+}
+
+.footer-col h4{
+    font-size:18px ;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight:bold;
+    position: relative;
+
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a{
+    font-size: 16px ;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+
+}
+
+
+
+@media(max-width: 767px){
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
